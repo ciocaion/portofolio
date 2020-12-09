@@ -15,8 +15,8 @@
     <input class="menu-btn" type="checkbox" id="menu-btn">
     <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
     <ul class="menu">
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">My Projects</a></li>
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#myprojects">My Projects</a></li>
         <li><a href="#">My Skills</a></li>
         <li><a href="#">Hire me</a></li>
     </ul>
@@ -25,15 +25,20 @@
 <section class="hero">
     <div class="content">
         <h1 class="h1">It's not about the code</h1>
-        <h1 class="h2">It's about the journey</h1>
-        <h3>Multimedia design student with strong interest in
-            Web Design, Graphic Design and Video Editing</h3>
+        <h1 class="h2" data-text="It's about the journey...">It's about the journey...</h1>
+        <h4>Multimedia design student with strong interest in
+            Web Design, Graphic Design and Video Editing</h4>
+    </div>
+    <div class="myself">
+        <img src="/assets/eu.jpg" class="me" alt="myself">
     </div>
     <a href="#" class="button-contact">Contact Me</a>
+    <div class="scroll">
     <div class="arrow">
-        <span></span>
+        <a href="#"><span></span></a>
     </div>
-    <a href="#" class="button-project">My Project</a>
+    <a href="#" class="button-project">My Projects</a>
+    </div>
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="herodesign" width="598.915" height="957" viewBox="0 0 598.915 957">
         <defs>
           <pattern id="pattern" width="1" height="1" viewBox="65.5 49.736 193.704 195.029">
@@ -83,12 +88,12 @@
 </section>
 <!--Second section-->
 
-<section class="aboutme">
+<section id="aboutme">
     <div class="left">
         <div class="transition">
-            <p class="title">About Me</p>
-            <p class="subcontent">Multimedia Design student based
-                in Copenhagen, Denmark.</p>
+            <h2 class="title"><span>About</span> Me</h2>
+            <span class="subcontent">Multimedia Design student based
+                in Copenhagen, Denmark.</span>
             <p class="description">My name is Ion and I am from the Republic
                 of Moldova. I have always been interested in
                 working with technologies that boost my creativity.
@@ -98,10 +103,17 @@
                 mastered Photoshop, InDesign, XD, Illustrator, Premiere
                 Pro, HTML, and CSS. Besides web design, I have a strong 
                 interest in digital marketing and e-commerce.
-                </p>
+            </p>
+            <div class="about-social">
+                <a href="#" class="about-icon"><i class='bx bxl-instagram' style='color:#030304' ></i></a>
+                <a href="#" class="about-icon"><i class='bx bxl-github'style='color:#030304' ></i></a>
+                <a href="#" class="about-icon"><i class='bx bxl-youtube' style='color:#030304'></i></a>
+                <a href="#" class="about-icon"><i class='bx bxl-linkedin' style='color:#030304'></i></a>
+            </div>
+
         </div>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="right-design" width="520" height="957" viewBox="0 0 520 957">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="herodesign" width="520" height="957" viewBox="0 0 520 957">
         <ellipse id="Ellipse_44" data-name="Ellipse 44" cx="43" cy="43.5" rx="43" ry="43.5" transform="translate(433)" fill="#d6c6dd"/>
         <ellipse id="Ellipse_45" data-name="Ellipse 45" cx="43" cy="43.5" rx="43" ry="43.5" transform="translate(433 174)" fill="#0045fd"/>
         <ellipse id="Ellipse_46" data-name="Ellipse 46" cx="43" cy="43.5" rx="43" ry="43.5" transform="translate(327 261)" fill="#d6c6dd"/>
@@ -118,13 +130,12 @@
       </svg>
 </section>
 
-<section class="myprojects">
+<section id="myprojects">
 <div class="portofolio-container transition3">
     <div class="portofolio-left">
+        <h2 class="title"><span>My</span> Projects</h2>
         <div class="inner">
             <p class="subtitle">New Car Concept</p>
-
-            <p class="web-title">ionci.dk/wheel2week/</p>
             <p class="featured-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias asperiores deserunt nemo! Quidem molestiae ad soluta, repudiandae molestias atque suscipit ab, dolorum vel ipsa perferendis tenetur, culpa aperiam quo voluptates?</p>
             </div>
     </div>
@@ -133,9 +144,7 @@
 <div class="portofolio-container transition3">
     <div class="portofolio-left">
         <div class="inner">
-            <p class="subtitle">Swing Dance School</p>
-
-            <p class="web-title">ionci.dk/swing/</p>
+            <p class="subtitle2">Swing Dance School</p>
             <p class="featured-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias asperiores deserunt nemo! Quidem molestiae ad soluta, repudiandae molestias atque suscipit ab, dolorum vel ipsa perferendis tenetur, culpa aperiam quo voluptates?</p>
             </div>
     </div>
@@ -143,9 +152,7 @@
 <div class="portofolio-container transition3">
     <div class="portofolio-left">
         <div class="inner">
-            <p class="subtitle">Ballet School</p>
-
-            <p class="web-title">ionci.dk/ballet/</p>
+            <p class="subtitle2">Ballet School</p>
             <p class="featured-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias asperiores deserunt nemo! Quidem molestiae ad soluta, repudiandae molestias atque suscipit ab, dolorum vel ipsa perferendis tenetur, culpa aperiam quo voluptates?</p>
             </div>
     </div>
