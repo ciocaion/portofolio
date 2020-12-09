@@ -1,0 +1,90 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+/*----Color----*/
+:root{
+    --first-color:#0046FF;
+    --second-color:#000000;
+    --third-color:#575757;
+    --fourth-color:#D5E1FF;
+    --fifth-color:#ECECEC;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    font-family:'Poppins';
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{width: 100%;
+}
+
+.nav-container{
+    background: var(--first-color);
+
+}
+a{
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.logo{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.nav-container .nav{
+    float: left;
+    color: black;
+}
+
+
+
+.arrow span{
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    margin-top: 20px;
+    border: 2px solid transparent;
+    border-right-color: var(--first-color);
+    border-bottom-color: var(--first-color) ;
+    transform: rotate(45deg);
+    animation: arrow-down .5s alternate infinite;
+}
+@keyframes arrow-down {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: .25;
+    }
+    50%{
+        opacity: .5;
+    }
+    75%{
+        opacity: .75;
+    }
+    100%{
+        opacity: 1;
+    }
