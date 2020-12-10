@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="main.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
     <title>Cioca Ion</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
         <li><a href="#aboutme">About Me</a></li>
         <li><a href="#myprojects">My Projects</a></li>
         <li><a href="#myskills">My Skills</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#container">Contact</a></li>
     </ul>
 </header>
 
@@ -178,16 +179,15 @@
 </section>
 
 <!--Fifth Section-->
-
-<div class="container">
-    <h1 class="name">Contact Me</h1>
-    <div class="wraper">
+<h1 class="name"><span>Contact</span> Me</h1>
+<div id="container">
+    <div class="wraper animated bounceInLeft">
         <div class="portofolio-info">
             <h3>Cioca Ion</h3>
             <ul>
-                <li>Else Alfelts Vej 91</li>
-                <li>+45 81 91 40 88</li>
-                <li>ciocaion2298@gmail.com</li>
+                <li><i class='bx bxs-map-pin' style='color:#030304'  ></i>Else Alfelts Vej 91</li>
+                <li><i class='bx bxs-phone' style='color:#030304'  ></i>+45 81 91 40 88</li>
+                <li><i class='bx bx-mail-send' style='color:#030304' ></i>ciocaion2298@gmail.com</li>
             </ul>
         </div>
         <div class="contact-me">
@@ -198,7 +198,7 @@
                     <input type="text" name="name">
                 </p>
                 <p>
-                    <label>Your Name</label>
+                    <label>Company</label>
                     <input type="text" name="name">
                 </p>
                 <p>
@@ -209,11 +209,11 @@
                     <label>Phone Number</label>
                     <input type="text" name="phone">
                 </p>
-                <p>
+                <p class="full">
                     <label>Message</label>
                     <textarea name="message" rows="5"></textarea>
                 </p>
-                <p>
+                <p class="full">
                     <button>Submit</button>
                 </p>
             </form>
@@ -233,7 +233,7 @@
                     <a href="#aboutme">About Me</a>
                     <a href="#myprojects">My Projects</a>
                     <a href="#myskills">My Skills</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#container">Contact</a>
                 </li>
             </ul>
         </div>
