@@ -523,6 +523,9 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after{
     transition: ease-out .3s;
 
 }
+    @media (min-width:960px) {
+        
+    } 
 
     @media (min-width:1280px) {
         header{
@@ -689,17 +692,8 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after{
         }
         .skill-container ul {
             display: grid;
-            grid-template-columns: repeat(12,1fr);
-            grid-gap: 90px;
-        }
-        .icon-one {
-            grid-column: 1/4;
-        }
-        .icon-two{
-            grid-column: 1/8;
-        }
-        .icon-three{
-            grid-column: 1/8;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 50px;
         }
         .skill-container ul li{
             padding: 2em;
@@ -726,5 +720,10 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after{
         }
         .portofolio-info h3, .portofolio-info ul, .name{
             text-align: left;
+        }
+        .footer-container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-items: center;
         }
         
