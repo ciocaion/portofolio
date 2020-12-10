@@ -360,13 +360,15 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after{
     margin-left: 1em;
     margin-right: 1em;
 }
-.skill-container .icon-container{
+.skill-container .icon-one,.icon-three,.icon-two{
     height: 50px;
     font-size: 80px;
     display: grid;
     place-content: center;
+    text-align: left;
     margin: 0 auto;
 }
+
 .skill-title{
     text-align: center;
     margin-top: 25px;
@@ -565,44 +567,50 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after{
             text-align: left;
         }
         #myprojects{
-            padding: 1em 9em;
-        }
-        .portofolio-container img{
-            max-width: 700px;
+            padding: 8em 9em;
         }
         .img1{
             max-width: 700px;
             float: right;
             position: relative;
-            bottom: 250px;
+            bottom: 400px;
         }
         .img2{
-            float: left;
+            max-width: 700px;
+            float: right;
             position: relative;
             bottom: 400px;
         }
         .img3{
+            max-width: 700px;
             float: right;
             position: relative;
-            bottom:600px;
+            bottom: 400px;
         }
         .car{
             display: inline-block;
             margin-right: 70%;
         }
+        .subtitle{
+            display: inline-block;
+            margin-top: 200px;
+            margin-bottom: 50px;
+        }
         .subtitle2{
             display: inline-block;
-            text-align: right;
-            margin-left: 75%;
+            text-align: left;
+            margin-right: 70%;
+            margin-bottom: 50px;
         }
         .swing{
             display: inline-block;
             text-align: left;
-            margin-left: 75%;
+            margin-right: 70%;
         }
         .subtitle3{
             display: inline-block;
             margin-right: 70%;
+            margin-bottom: 50px;
         }
         .ballet{
             display: inline-block;
@@ -610,11 +618,35 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after{
         }
         .button-more{
             position: relative;
-            top: 100px;
+            top: 120px;
             left: 40%;
             font-size: 20px;
             padding: 10px 15px;
         }
         #myskills{
-            padding: 50em 5.5em;
+            padding: 10em 5.5em;
         }
+        .skill-container ul {
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-gap: 90px;
+        }
+        .icon-one {
+            grid-column: 1/4;
+        }
+        .icon-two{
+            grid-column: 1/8;
+        }
+        .icon-three{
+            grid-column: 1/8;
+        }
+        .skill-container ul li{
+            padding: 2em;
+            border-radius: 1em;
+            margin-bottom: 9em;
+            margin-left: 2em;
+            margin-right: 1em;
+            height: 350px;
+            width: 350px;
+        }
+        
