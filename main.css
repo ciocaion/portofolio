@@ -861,6 +861,9 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after{
             top: 82.7%;
             left: 41%;
         }
+        .button-more{
+            font-size: 20px;
+        }
         .wraper{
             width: 1300px;
             margin-left: -8%;
